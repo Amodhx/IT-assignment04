@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case 06</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+</head>
+<style>
+    main{
+        width: 100%;
+        height: 100vh;
+        background-color: lightcyan;
+        margin: 0;
+    }
+    section{
+        display: flex;
+        width: 288vw;
+        background-image: url("assets/sky.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        animation: animi 5s infinite ease-in;
+    }
+    main>section>div{
+        height: 100vh;
+        width: 96vw;
+        overflow: hidden;
+    }
+    main>section>div>img:first-child{
+        position: relative;
+        top: 206px;
+        left: 0;
+    }
+    main>section>div>img:last-child{
+         position: relative;
+        top: 202px;
+        left: 0;
+     }
+    main>img:first-child{
+        position: absolute;
+        z-index: 500;
+        width: 355px;
+        top: 416px;
+        left: 531px;
+    }
+    main>img:nth-child(2){
+        position: absolute;
+        z-index: 1000;
+        width: 67px;
+        top: 494px;
+        left: 561px;
+        animation: my-animation 4s infinite alternate;
+    }
+    main>img:nth-child(3){
+        position: absolute;
+        z-index: 1000;
+        width: 67px;
+        top: 494px;
+        left: 779px;
+        animation: my-animation 4s infinite alternate;
+    }
+
+    @keyframes animi {
+        from{
+            transform: translateX(-0%);
+        }
+        to{
+            transform: translateX(-65%);
+        }
+    }
+    @keyframes my-animation {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
+
+</style>
+<body>
+<main>
+    <img src="assets/car.png" alt="">
+    <img src="assets/wheel.png" alt="">
+    <img src="assets/wheel.png" alt="">
+<section>
+    <div>
+        <img src="assets/city.png">
+        <img src="assets/road.jpg">
+    </div>
+    <div>
+        <img src="assets/city.png">
+        <img src="assets/road.jpg">
+    </div>
+    <div>
+        <img src="assets/city.png">
+        <img src="assets/road.jpg">
+    </div>
+</section>
+</main>
+</body>
+</html>
