@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case 03</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+</head>
+<style>
+    div{
+        position: absolute;
+        margin: auto;
+        width: 300px;
+        height: 150px;
+        background-color: red;
+        border-radius: 12px;
+        animation: animi 4s infinite linear;
+        animation-direction: alternate;
+    }
+
+    @keyframes animi {
+        0%{
+            top: 0;
+            left: 0;
+            background-color: red;
+        }
+        25%{
+            top: 0;
+            left: calc(100% - 300px);
+            background-color: blue;
+            rotate: 180deg;
+        }
+        50%{
+            left: calc(100% - 300px);
+            top: calc(100vh - 150px);
+            background-color: purple;
+            rotate: 360deg;
+        }
+        75%{
+            left: 0;
+            top: calc(100vh - 150px);
+            background-color: yellow;
+            rotate: 180deg;
+        }
+        100%{
+            top: 0;
+            left: 0;
+            background-color: red;
+            rotate: 0deg;
+        }
+    }
+</style>
+<body>
+<div></div>
+</body>
+</html>
