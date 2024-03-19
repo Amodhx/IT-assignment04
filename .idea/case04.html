@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case 04</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+</head>
+<style>
+    div{
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        border: 5px solid dodgerblue;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        animation: my-animation 1s infinite linear;
+    }
+
+    @keyframes my-animation {
+        from{
+            width: 10px;
+            height: 10px;
+            opacity: 100%;
+        }
+        to{
+            width: 150px;
+            height: 150px;
+            opacity: 0%;
+        }
+    }
+</style>
+<body>
+<div></div>
+</body>
+</html>
